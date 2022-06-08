@@ -13,3 +13,5 @@ C:\Users\jose.barron\Source\Repos\NetCore6\tienda\Infrastructure\obj\Debug\net6.
 C:\Users\jose.barron\Source\Repos\NetCore6\tienda\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
 C:\Users\jose.barron\Source\Repos\NetCore6\tienda\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
 C:\Users\jose.barron\Source\Repos\NetCore6\tienda\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
+C:\Users\jose.barron\Source\Repos\NetCore6\tienda\Infrastructure\bin\Debug\net6.0\Infrastructure.runtimeconfig.json
+C:\Users\jose.barron\Source\Repos\NetCore6\tienda\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
