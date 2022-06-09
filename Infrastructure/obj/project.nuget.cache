@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8QMtuNgGg754u0fxT8yF3FRl1lrSfvafziSHzvnOe1e4DPfW1E8Y30y9r5EDNqPLFxkzjGqofZRzgysbmBRapA==",
+  "dgSpecHash": "5iOK9DPQemi72GreT8jClShOz3zZrxNDdZfSXps2rj27Crkrx5zUtLAfBZnfKIWPlvJNYLjY4/A6jlUPbAU4iw==",
   "success": true,
   "projectFilePath": "C:\\Users\\jose.barron\\Source\\Repos\\NetCore6\\tienda\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jose.barron\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
     "C:\\Users\\jose.barron\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jose.barron\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\jose.barron\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

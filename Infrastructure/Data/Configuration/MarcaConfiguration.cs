@@ -12,6 +12,7 @@ namespace Infrastructure.Data.Configuration
             builder.ToTable("Marca");
             builder.Property(x => x.Id).IsRequired();
             builder.Property(x => x.Nombre).IsRequired().HasMaxLength(100);
+         
         }
     }
 }

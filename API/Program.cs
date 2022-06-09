@@ -30,6 +30,8 @@ using (var scope=app.Services.CreateScope())
     {
         var context = services.GetRequiredService<TiendaContext>();
         await context.Database.MigrateAsync();
+        await TiendaContextSeed.SeedAsync(context, loggetFactory);
+        
     }
     catch(Exception ex)
     {
