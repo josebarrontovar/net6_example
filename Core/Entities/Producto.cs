@@ -1,12 +1,8 @@
 ﻿
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
 namespace Core.Entities
 {
-    public  class Producto
+    public  class Producto : BaseEntity
     {
-        public int Id { get; set; }
         public string? Nombre { get; set; }
         public decimal Precio { get; set; }
         public DateTime fechaCreacion { get; set; }

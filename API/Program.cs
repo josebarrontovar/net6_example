@@ -1,10 +1,11 @@
+using API.Extensions;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.ConfigureCors();
 builder.Services.AddControllers();
 builder.Services.AddDbContext<TiendaContext>(
         options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
@@ -40,6 +41,7 @@ using (var scope=app.Services.CreateScope())
     }
 }
 
+app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

@@ -12,7 +12,7 @@ public class TiendaContextSeed
         {
             var ruta = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
-            if (!context.Marcas.Any())
+            if (context.Marcas is not null && !context.Marcas.Any())
             {
                 using (var readerMarcas = new StreamReader(ruta + @"/Data/Csvs/marcas.csv"))
                 {
@@ -25,7 +25,7 @@ public class TiendaContextSeed
                 }
             }
 
-            if (!context.Categorias.Any())
+            if (context.Categorias is not null && !context.Categorias.Any())
             {
                 using (var readerCategorias = new StreamReader(ruta + @"/Data/Csvs/categorias.csv"))
                 {
@@ -38,7 +38,7 @@ public class TiendaContextSeed
                 }
             }
 
-            if (!context.Productos.Any())
+            if (context.Productos is not null && !context.Productos.Any())
             {
                 using (var readerProductos = new StreamReader(ruta + @"/Data/Csvs/productos.csv"))
                 {
