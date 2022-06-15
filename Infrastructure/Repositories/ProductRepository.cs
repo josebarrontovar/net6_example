@@ -22,6 +22,20 @@ namespace Infrastructure.Repositories
         public async Task<IEnumerable<Producto>> GetProductosMasCaros(int cantidad)=>
             await _context.Productos.OrderByDescending(_ => _.Precio).Take(cantidad).ToListAsync();
            
-        
+        public override async Task<Producto> GetByIdAsync(int id)
+        {
+            return await _context.Productos
+                                 .Include(_ => _.Marca)
+                                 .Include(_ => _.Categoria)
+                                 .FirstOrDefaultAsync(_=>_.Id==id);
+        }
+
+        public override async Task<IEnumerable<Producto>> GetAllAsync()
+        {
+            return await _context.Productos
+                                 .Include(_ => _.Marca)
+                                 .Include(_ => _.Categoria)
+                                 .ToListAsync();
+        }
     }
 }

@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "F4V1QMi0Megz0y+TzkxouJec3FCYh9X9VKXnCYmTI9fL5/LULNZj+p0t/yo444md+zFPqF3RLWWOKC6t5+wCiA==",
+  "dgSpecHash": "tDIxCpUrZ1hmv8rGD3WrySLW2WuIpq4k9tmY033oHlGu4e3K40URFuxWzEPitiIbwGuWgjNX0rV5Ds6V+1uZZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\jose.barron\\Source\\Repos\\NetCore6\\tienda\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jose.barron\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\jose.barron\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\jose.barron\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
     "C:\\Users\\jose.barron\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\jose.barron\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\jose.barron\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\jose.barron\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\jose.barron\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\jose.barron\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.5\\microsoft.entityframeworkcore.6.0.5.nupkg.sha512",
