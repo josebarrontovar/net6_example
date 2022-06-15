@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.ConfigureCors();
+builder.Services.AddApplicationService();
 builder.Services.AddControllers();
 builder.Services.AddDbContext<TiendaContext>(
         options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
