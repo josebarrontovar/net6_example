@@ -20,6 +20,11 @@ namespace API.Profiles
                 .ReverseMap()
                 .ForMember(origen => origen.Categoria, dest => dest.Ignore())
                 .ForMember(origen => origen.Marca, dest => dest.Ignore());
+
+            CreateMap<Producto, ProductoAddUpdateDTO>()
+                .ReverseMap()
+                .ForMember(origen => origen.Categoria, dest => dest.Ignore())
+                .ForMember(origen => origen.Marca, dest => dest.Ignore());
         }
     }
 }
