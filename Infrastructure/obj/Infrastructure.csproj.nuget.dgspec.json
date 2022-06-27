@@ -1,21 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jose.barron\\Source\\Repos\\NetCore6\\tienda\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\jose.barron\\Documents\\Proyectos\\net6ExampleArchitecture\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jose.barron\\Source\\Repos\\NetCore6\\tienda\\Core\\Core.csproj": {
+    "C:\\Users\\jose.barron\\Documents\\Proyectos\\net6ExampleArchitecture\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jose.barron\\Source\\Repos\\NetCore6\\tienda\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\jose.barron\\Documents\\Proyectos\\net6ExampleArchitecture\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\jose.barron\\Source\\Repos\\NetCore6\\tienda\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\jose.barron\\Documents\\Proyectos\\net6ExampleArchitecture\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\jose.barron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jose.barron\\Source\\Repos\\NetCore6\\tienda\\Core\\obj\\",
+        "outputPath": "C:\\Users\\jose.barron\\Documents\\Proyectos\\net6ExampleArchitecture\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\jose.barron\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,7 +50,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -60,22 +60,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400-preview.22301.10\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jose.barron\\Source\\Repos\\NetCore6\\tienda\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\jose.barron\\Documents\\Proyectos\\net6ExampleArchitecture\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jose.barron\\Source\\Repos\\NetCore6\\tienda\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\jose.barron\\Documents\\Proyectos\\net6ExampleArchitecture\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\jose.barron\\Source\\Repos\\NetCore6\\tienda\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\jose.barron\\Documents\\Proyectos\\net6ExampleArchitecture\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\jose.barron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jose.barron\\Source\\Repos\\NetCore6\\tienda\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\jose.barron\\Documents\\Proyectos\\net6ExampleArchitecture\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\jose.barron\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -94,8 +93,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jose.barron\\Source\\Repos\\NetCore6\\tienda\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\jose.barron\\Source\\Repos\\NetCore6\\tienda\\Core\\Core.csproj"
+              "C:\\Users\\jose.barron\\Documents\\Proyectos\\net6ExampleArchitecture\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\jose.barron\\Documents\\Proyectos\\net6ExampleArchitecture\\Core\\Core.csproj"
               }
             }
           }
@@ -139,7 +138,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -148,7 +148,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400-preview.22301.10\\RuntimeIdentifierGraph.json"
         }
       }
     }

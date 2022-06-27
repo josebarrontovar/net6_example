@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YDTa+fIVufTlgPWSajf+fEcgFz+YaNtHkns65bWB1zhO3FbO1HmWzJWylrsbnZyndqpncD4nVV0nPdMcVHUIzQ==",
+  "dgSpecHash": "UV8uTwR0rVUOdRc2kJbgCC/TfkyUJAmi1Gnr6k6cO0emAbZ45Y88OrXb5t1rD3R+aOuCrTYHcK1akJrZ0dE/nA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jose.barron\\Source\\Repos\\NetCore6\\tienda\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\jose.barron\\Documents\\Proyectos\\net6ExampleArchitecture\\Core\\Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
