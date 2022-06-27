@@ -23,12 +23,23 @@ namespace API.Controllers
         }
 
         [HttpGet]
+        [ApiVersion("1.0")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<IEnumerable<ProductoListDTO>>> Get()
         {
             var productos = await _unitOfWork.Productos.GetAllAsync();
             return _mapper.Map<List<ProductoListDTO>>(productos);
+        }
+
+        [HttpGet]
+        [ApiVersion("1.1")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<IEnumerable<ProductoDTO>>> Get11()
+        {
+            var productos = await _unitOfWork.Productos.GetAllAsync();
+            return _mapper.Map<List<ProductoDTO>>(productos);
         }
 
         [HttpGet("{id}")]

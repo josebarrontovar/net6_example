@@ -2,6 +2,7 @@
 using Core.Interfaces;
 using Infrastructure.Repositories;
 using Infrastructure.UnitOfWork;
+using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.Extensions.Options;
 
 namespace API.Extensions
@@ -54,6 +55,7 @@ namespace API.Extensions
             {
                 opt.DefaultApiVersion=new Microsoft.AspNetCore.Mvc.ApiVersion(1, 0);
                 opt.AssumeDefaultVersionWhenUnspecified = true;
+                opt.ApiVersionReader = new QueryStringApiVersionReader("ver");
 
             });
         }
