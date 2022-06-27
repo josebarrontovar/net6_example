@@ -8,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
 builder.Services.ConfigureRateLimitiong();
+builder.Services.ConfigureApiVersioning();
+
+
 // Add services to the container.
 builder.Services.ConfigureCors();
 builder.Services.AddApplicationService();
@@ -21,8 +24,10 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-
 app.UseIpRateLimiting();
+app.UseApiVersioning();
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
