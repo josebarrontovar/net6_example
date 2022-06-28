@@ -56,7 +56,12 @@ namespace API.Extensions
                 opt.DefaultApiVersion=new Microsoft.AspNetCore.Mvc.ApiVersion(1, 0);
                 opt.AssumeDefaultVersionWhenUnspecified = true;
                 //opt.ApiVersionReader = new QueryStringApiVersionReader("ver");
-                opt.ApiVersionReader = new HeaderApiVersionReader("X-Version");
+                //opt.ApiVersionReader = new HeaderApiVersionReader("X-Version");
+                //Se envia uno o otro desde el cliente.
+                opt.ApiVersionReader = ApiVersionReader.Combine(
+                    new QueryStringApiVersionReader("ver"),
+                    new HeaderApiVersionReader("X-Version")
+                    );
                 opt.ReportApiVersions = true;
 
             });
