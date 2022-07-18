@@ -14,11 +14,15 @@ builder.Services.ConfigureApiVersioning();
 // Add services to the container.
 builder.Services.ConfigureCors();
 builder.Services.AddApplicationService();
+
+//Acepta solo formatos JSON y XML
 builder.Services.AddControllers(opt =>
 {
     opt.RespectBrowserAcceptHeader = true;
     opt.ReturnHttpNotAcceptable = true;
 }).AddXmlSerializerFormatters();
+
+
 builder.Services.AddDbContext<TiendaContext>(
         options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
 

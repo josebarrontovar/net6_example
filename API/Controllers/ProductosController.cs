@@ -1,4 +1,5 @@
 ﻿using API.Dtos;
+using API.Helpers;
 using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
@@ -27,10 +28,12 @@ namespace API.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<IEnumerable<ProductoListDTO>>> Get()
+        public async Task<ActionResult<Pager<ProductoListDTO>>> Get([FromQuery] Params productParams)
         {
-            var productos = await _unitOfWork.Productos.GetAllAsync();
-            return _mapper.Map<List<ProductoListDTO>>(productos);
+            var res = await _unitOfWork.Productos.GetAllAsync(productParams.PageIndex,productParams.PageSize,productParams.Search);
+            var listProduct = _mapper.Map<List<ProductoListDTO>>(res.registros);
+            Response.Headers.Add("X-InlineCounts", res.totalRegistros.ToString());
+            return new Pager<ProductoListDTO>(listProduct, res.totalRegistros, productParams.PageIndex, productParams.PageSize, productParams.Search);
         }
 
         [HttpGet]
