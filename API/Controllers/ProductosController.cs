@@ -46,7 +46,7 @@ namespace API.Controllers
             return _mapper.Map<List<ProductoDTO>>(productos);
         }
 
-        [HttpGet("{idDDD}")]
+        [HttpGet("{idsss}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
