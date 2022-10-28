@@ -2,8 +2,8 @@
 {
     public class Params
     {
-        private int _pageSize = 15;
-        private const int MaxPageSize = 150;
+        private int _pageSize = 5;
+        private const int MaxPageSize = 50;
         private int _pageIndex = 10;
 
         private string _search;
